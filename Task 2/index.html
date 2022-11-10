@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Week 5 lab 1</title>
+    <script>
+      // task 2
+      function task2() {
+        addArray(numbers);
+      }
+      let numbers = [1, -1, 0, -3, 5];
+      function addArray(array) {
+        let sum = 0;
+        for (i = 0; i < numbers.length; i++) {
+          if (array[i] > 0) {
+            sum = sum + array[i];
+          }
+        }
+        console.log("Task 2 Sum of array " + sum);
+        document.getElementById("task2").innerHTML = sum;
+      }
+
+      addArray(numbers);
+    </script>
+  </head>
+  <body>
+    <!-- Tasks -->
+    <h1>Week 5 Lab 1</h1>
+
+    <!-- task 2 -->
+    <h2>Task 2</h2>
+    <button onclick="task2()">Task 2 Answer</button>
+    <h2 id="task2"></h2>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
