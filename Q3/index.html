@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Week 5 lab 1</title>
+    <script>
+      // task 3
+
+      // program to generate fibonacci series up to n terms
+
+      // take input from the user
+      const value = parseInt(prompt("Enter the number of terms: "));
+      let n1 = 0,
+        n2 = 1,
+        nextTerm;
+
+      console.log("Fibonacci Series:");
+
+      for (let i = 1; i <= value; i++) {
+        console.log(n1);
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Tasks -->
+    <h1>Week 5 Lab 1</h1>
+
+    <!-- task 3 -->
+    <h2>Task 3</h2>
+    <input type="number" name="term" id="term" />
+    <button type="button" onclick="fibonacci()">fibonacci</button>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
