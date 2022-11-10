@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Week 5 lab 1</title>
+    <script>
+      // task 4
+
+      let number = 1;
+      function counterPlus() {
+        document.getElementById("counterNumber").innerHTML = number;
+        number++;
+      }
+      function counterMinus() {
+        document.getElementById("counterNumber").innerHTML = number;
+        number--;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Tasks -->
+    <h1>Week 5 Lab 1</h1>
+
+    <!-- task 4 -->
+    <h2>Task 4</h2>
+    <h3>
+      Counter
+      <h2 id="counterNumber">0</h2>
+    </h3>
+    <button type="button" name="plus" id="plus" onclick="counterPlus()">
+      +
+    </button>
+    <button type="button" name="minus" id="minus" onclick="counterMinus()">
+      -
+    </button>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
